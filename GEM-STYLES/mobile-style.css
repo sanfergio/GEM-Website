@@ -274,6 +274,12 @@
         justify-content: center;
         text-align: center;
 
+    } 
+
+   .season-three-content{
+
+        flex-direction: column-reverse;
+
     }
 
 }
