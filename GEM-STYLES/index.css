@@ -137,7 +137,7 @@ h2::after {
 .season-two-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     padding: 20px;
     margin-top: 20px;
@@ -148,10 +148,13 @@ h2::after {
     background-color: #f5f5f5;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 260px;
+    width: calc(33.333% - 40px); /* 3 por linha com gap incluso */
+    max-width: 260px;
+    min-width: 240px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
+    flex-grow: 1;
 }
 
 .gem-cards:hover {
